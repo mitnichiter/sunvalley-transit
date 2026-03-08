@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations & Services — Sunvalley Transit</title>
+  <meta name="description" content="Explore Ooty, Coonoor, Palakkad and South India with Sunvalley Transit. Airport shuttles, sightseeing tours, Jeep adventures, and multi-city packages.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav" class="nav-glass" style="position:fixed;width:100%;top:0;left:0;z-index:50;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;">
+    <a href="index.html" class="nav-logo" style="display:flex;align-items:center;"><img src="logo.png" alt="Sunvalley Transit" class="nav-logo-img"></a>
+    <div class="nav-links" style="display:none;" id="desktop-nav">
+      <div style="display:flex;gap:2rem;align-items:center;">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+    <a href="contact.html" class="btn-primary" id="nav-cta" style="display:none;">Book Now</a>
+    <button id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+  <style>@media(min-width:768px){#desktop-nav{display:flex!important}#nav-cta{display:inline-flex!important}#mobile-toggle{display:none!important}}</style>
+  <div id="mobile-menu">
+    <button id="mobile-close" aria-label="Close menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <a href="index.html" class="mobile-menu-link">Home</a><a href="about.html" class="mobile-menu-link">About</a><a href="services.html" class="mobile-menu-link">Destinations</a><a href="packages.html" class="mobile-menu-link">Packages</a><a href="contact.html" class="mobile-menu-link">Contact</a>
+    <a href="contact.html" class="btn-primary" style="margin-top:1rem;font-size:1rem;">Book Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1920&auto=format&fit=crop" alt="Nilgiris landscape" class="parallax-img">
+    <div class="hero-content">
+      <p class="overline" style="color:var(--color-yellow);margin-bottom:1rem;">Explore & Experience</p>
+      <h1 style="font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:700;">Destinations & <br class="mobile-break">Services</h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- SERVICES OVERVIEW -->
+    <section style="padding:6rem 1.5rem;">
+      <div style="max-width:1200px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+          <p class="overline" style="margin-bottom:0.75rem;">Our Services</p>
+          <h2 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">How We Get You There</h2>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;" class="stagger-children">
+          <div class="feature-card">
+            <div class="icon-wrap"><i data-lucide="plane" style="width:28px;height:28px;"></i></div>
+            <h3>Airport & Railway Shuttles</h3>
+            <p>Seamless pickups and drops from Coimbatore Airport and Mettupalayam Railway Station. Start your journey stress-free.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrap"><i data-lucide="binoculars" style="width:28px;height:28px;"></i></div>
+            <h3>Sightseeing Tours</h3>
+            <p>Full-day and half-day guided tours of Ooty, Coonoor, and Palakkad with experienced local drivers who know every hidden corner.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrap"><i data-lucide="mountain-snow" style="width:28px;height:28px;"></i></div>
+            <h3>Jeep Adventures</h3>
+            <p>Off-road Nilgiris exploration in rugged Jeeps — discover hidden gems, mountain trails, and secret spots away from tourist crowds.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrap"><i data-lucide="route" style="width:28px;height:28px;"></i></div>
+            <h3>Multi-City Packages</h3>
+            <p>Bangalore → Coimbatore → Palakkad → Ooty routes. Customizable itineraries covering South India's best destinations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DESTINATION DEEP-DIVES -->
+    <!-- Ooty -->
+    <section class="alt-section" style="padding:5rem 1.5rem;background:var(--bg-beige);">
+      <div class="alt-grid" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="reveal-left" style="border-radius:16px;overflow:hidden;height:450px;">
+          <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=800&auto=format&fit=crop" alt="Ooty tea gardens" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div class="reveal-right">
+
+          <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,2.75rem);margin-bottom:1rem;">Ooty</h2>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem;">Perched at 2,240 metres in the Nilgiri mountains, Ooty is a colonial hill station known for its sprawling tea gardens, stunning viewpoints, and pleasant climate year-round. Experience the charm of the Botanical Garden, the panoramic views from Doddabetta Peak, serene Ooty Lake, and the fragrant Rose Garden.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Botanical Garden</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Doddabetta Peak</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Ooty Lake</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Rose Garden</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Tea Factory</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem;margin-top:2.5rem;">
+
+            <a href="packages.html" class="btn-dark">Explore Ooty Packages <span style="margin-left:0.25rem;">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coonoor -->
+    <section class="alt-section" style="padding:5rem 1.5rem;">
+      <div class="alt-grid" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="reveal-left" style="border-radius:16px;overflow:hidden;height:450px;">
+          <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=800&auto=format&fit=crop" alt="Coonoor scenic views" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div class="reveal-right">
+
+          <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,2.75rem);margin-bottom:1rem;">Coonoor</h2>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem;">The quieter, more serene cousin of Ooty, Coonoor offers hidden waterfalls, the iconic Nilgiri Mountain Railway, and pristine tea estates untouched by mass tourism. Walk through Sim's Park, gaze from Dolphin's Nose viewpoint, and explore the ruins of Droog Fort.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Sim's Park</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Dolphin's Nose</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Lamb's Rock</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Droog Fort</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Hidden Falls</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem;margin-top:2.5rem;">
+
+            <a href="packages.html" class="btn-dark">Explore Coonoor Packages <span style="margin-left:0.25rem;">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Palakkad -->
+    <section class="alt-section" style="padding:5rem 1.5rem;background:var(--bg-beige);">
+      <div class="alt-grid" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="reveal-left" style="border-radius:16px;overflow:hidden;height:450px;">
+          <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=800&auto=format&fit=crop" alt="Palakkad green fields" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div class="reveal-right">
+
+          <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,2.75rem);margin-bottom:1rem;">Palakkad</h2>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem;">Known as the gateway to Kerala through the Palakkad Gap, this district offers a blend of history, nature, and culture. Visit the 18th-century Palakkad Fort, explore Silent Valley National Park, and enjoy the tranquil Malampuzha Dam and its beautiful gardens.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Palakkad Fort</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Silent Valley</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Malampuzha Dam</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Jain Temple</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem;margin-top:2.5rem;">
+
+            <a href="packages.html" class="btn-dark">Explore Palakkad Packages <span style="margin-left:0.25rem;">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coimbatore -->
+    <section class="alt-section" style="padding:5rem 1.5rem;">
+      <div class="alt-grid" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="reveal-left" style="border-radius:16px;overflow:hidden;height:450px;">
+          <img src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?q=80&w=800&auto=format&fit=crop" alt="Coimbatore surroundings" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+        </div>
+        <div class="reveal-right">
+
+          <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,2.75rem);margin-bottom:1rem;">Coimbatore Stops</h2>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem;">On the route from Bangalore to the Nilgiris, Coimbatore offers its own cultural gems worth exploring. Visit the ancient Marudhamalai Temple, relax at VOC Park, or cool off at Kovai Kutralam Falls before heading up to the hills.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1.5rem;">
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Marudhamalai Temple</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> VOC Park</span>
+            <span class="spot-tag"><i data-lucide="map-pin" style="width:12px;height:12px;"></i> Kovai Kutralam</span>
+          </div>
+          <div style="display:flex;flex-direction:column;align-items:flex-start;gap:1.5rem;margin-top:2.5rem;">
+
+            <a href="contact.html" class="btn-dark">Plan Your Route <span style="margin-left:0.25rem;">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>@media(max-width:768px){.alt-grid{grid-template-columns:1fr!important}.alt-section:nth-child(even) .alt-grid{direction:ltr!important}}</style>
+
+    <!-- FAQ -->
+    <section style="padding:6rem 1.5rem;background:var(--color-black);">
+      <div style="max-width:900px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:3rem;" class="reveal">
+          <p class="overline" style="margin-bottom:0.75rem;">Common Questions</p>
+          <h2 style="font-family:var(--font-heading);color:white;font-size:clamp(2rem,5vw,3rem);font-weight:700;">Frequently Asked Questions</h2>
+        </div>
+
+        <div>
+          <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+            <button class="faq-trigger" style="color:var(--bg-beige-dark);" aria-expanded="false">
+              <span>How do I book an airport shuttle?</span>
+              <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-content"><div class="inner" style="color:rgba(240,236,228,0.7);">Simply reach out to us via our contact form, WhatsApp, or phone. Share your flight/train details and we'll arrange a comfortable vehicle to pick you up from Coimbatore Airport or Mettupalayam Railway Station.</div></div>
+          </div>
+          <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+            <button class="faq-trigger" style="color:var(--bg-beige-dark);" aria-expanded="false">
+              <span>What types of vehicles do you offer?</span>
+              <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-content"><div class="inner" style="color:rgba(240,236,228,0.7);">We offer sedans for couples and small groups, SUVs for families, Tempo Travellers for larger groups, and rugged Jeeps for off-road mountain adventures. All vehicles are well-maintained and equipped for hill terrain.</div></div>
+          </div>
+          <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+            <button class="faq-trigger" style="color:var(--bg-beige-dark);" aria-expanded="false">
+              <span>Can you customize a multi-city itinerary?</span>
+              <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-content"><div class="inner" style="color:rgba(240,236,228,0.7);">Absolutely! Our most popular custom route is Bangalore → Coimbatore → Palakkad → Ooty. We can customize stops, duration, vehicle type, and accommodation through our parent company Sunvalley Living Concepts Pvt Ltd.</div></div>
+          </div>
+          <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+            <button class="faq-trigger" style="color:var(--bg-beige-dark);" aria-expanded="false">
+              <span>What's included in Jeep Adventures?</span>
+              <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-content"><div class="inner" style="color:rgba(240,236,228,0.7);">Our Jeep Adventures include an experienced driver-guide, fuel, and access to hidden Nilgiris spots away from crowded tourist trails. It's the best way to discover the mountains' hidden gems and untouched natural beauty.</div></div>
+          </div>
+          <div class="faq-item" style="border-color:rgba(255,255,255,0.1);">
+            <button class="faq-trigger" style="color:var(--bg-beige-dark);" aria-expanded="false">
+              <span>Do you arrange accommodation as well?</span>
+              <svg class="icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>
+            </button>
+            <div class="faq-content"><div class="inner" style="color:rgba(240,236,228,0.7);">Yes! As part of Sunvalley Living Concepts Pvt Ltd, we can arrange comfortable stays alongside your travel. We ensure your entire experience—stay and travel—is convenient, comfortable, and cozy.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <!-- ════════════════════════════════════════════════
+       PREMIUM FOOTER
+       ════════════════════════════════════════════════ -->
+  <footer class="premium-footer">
+    <div class="premium-footer-inner">
+      
+      <!-- Top Highlight Section -->
+      <div class="footer-highlight-section reveal">
+        <p class="footer-tagline">
+          Your trusted partner for seamless airport & railway shuttles, sightseeing, and customizable South India travel packages.
+        </p>
+        <div class="premium-social-row">
+          <a href="#" class="premium-social-btn" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+          </a>
+          <a href="https://wa.me/919876543210" class="premium-social-btn" aria-label="WhatsApp" target="_blank">
+            <i data-lucide="message-circle"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Grid -->
+      <div class="premium-footer-grid reveal">
+        
+        <!-- Column 1: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="premium-link-list">
+            <li><a href="index.html" class="premium-link">Home</a></li>
+            <li><a href="about.html" class="premium-link">About Us</a></li>
+            <li><a href="services.html" class="premium-link">Destinations & Services</a></li>
+            <li><a href="packages.html" class="premium-link">Travel Packages</a></li>
+            <li><a href="contact.html" class="premium-link">Contact / Inquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Popular Routes -->
+        <div class="footer-col">
+          <h4>Popular Routes</h4>
+          <ul class="premium-link-list">
+            <li><a href="services.html" class="premium-link">Ooty Airport Shuttle</a></li>
+            <li><a href="services.html" class="premium-link">Coimbatore Transfers</a></li>
+            <li><a href="services.html" class="premium-link">Nilgiri Sightseeing</a></li>
+            <li><a href="services.html" class="premium-link">Coonoor Tours</a></li>
+            <li><a href="packages.html" class="premium-link">Custom Travel Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="premium-contact-list">
+            <li class="premium-contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="mail"></i>
+              <a href="mailto:info@sunvalleytransit.com">info@sunvalleytransit.com</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Ooty, Nilgiris District,<br>Tamil Nadu, India</span>
+            </li>
+          </ul>
+          <p style="color:rgba(240,236,228,0.4);font-size:0.85rem;margin-top:1.5rem;font-style:italic;">Part of Sunvalley Living Concepts Pvt Ltd</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Bar -->
+      <div class="premium-bottom-bar">
+        <div>© 2026 Sunvalley Transit. All rights reserved.</div>
+        <div class="designed-with-care">
+          <span>Designed with care for the Nilgiris</span>
+          <i data-lucide="mountain" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script defer>document.addEventListener('DOMContentLoaded',()=>{if(typeof lucide!=='undefined')lucide.createIcons();});</script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

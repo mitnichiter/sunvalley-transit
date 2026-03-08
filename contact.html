@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — Sunvalley Transit</title>
+  <meta name="description" content="Get in touch with Sunvalley Transit. Send us an inquiry for shuttles, sightseeing tours, and travel packages in the Nilgiris and South India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav" class="nav-glass" style="position:fixed;width:100%;top:0;left:0;z-index:50;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;">
+    <a href="index.html" class="nav-logo" style="display:flex;align-items:center;"><img src="logo.png" alt="Sunvalley Transit" class="nav-logo-img"></a>
+    <div class="nav-links" style="display:none;" id="desktop-nav">
+      <div style="display:flex;gap:2rem;align-items:center;">
+        <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="services.html" class="nav-link">Destinations</a><a href="packages.html" class="nav-link">Packages</a><a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+    <a href="contact.html" class="btn-primary" id="nav-cta" style="display:none;">Book Now</a>
+    <button id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false" style="background:none;border:none;cursor:pointer;color:white;padding:0.5rem;">
+      <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+  <style>@media(min-width:768px){#desktop-nav{display:flex!important}#nav-cta{display:inline-flex!important}#mobile-toggle{display:none!important}}</style>
+  <div id="mobile-menu" style="position:fixed;inset:0;z-index:60;background:rgba(17,17,17,0.97);backdrop-filter:blur(20px);transform:translateX(100%);transition:transform 0.5s cubic-bezier(0.19,1,0.22,1);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2rem;">
+    <button id="mobile-close" aria-label="Close menu" style="position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;color:white;"><svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <a href="index.html" class="mobile-menu-link">Home</a><a href="about.html" class="mobile-menu-link">About</a><a href="services.html" class="mobile-menu-link">Destinations</a><a href="packages.html" class="mobile-menu-link">Packages</a><a href="contact.html" class="mobile-menu-link">Contact</a>
+    <a href="contact.html" class="btn-primary" style="margin-top:1rem;font-size:1rem;">Book Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" style="height:50vh;min-height:350px;">
+    <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=1920&auto=format&fit=crop" alt="Nilgiris contact" class="parallax-img">
+    <div class="hero-content">
+      <p class="overline" style="color:var(--color-yellow);margin-bottom:1rem;">Let's Connect</p>
+      <h1 style="font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;">Get In Touch</h1>
+      <p style="margin-top:1rem;font-size:1.1rem;opacity:0.85;">We'd love to hear from you</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- CONTACT SECTION -->
+    <section style="padding:6rem 1.5rem;">
+      <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.2fr 0.8fr;gap:4rem;align-items:start;">
+
+        <!-- Left: Form -->
+        <div class="reveal-left">
+          <p class="overline" style="margin-bottom:0.75rem;">Inquiry Form</p>
+          <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,2.5rem);margin-bottom:0.75rem;">Send Us a Message</h2>
+          <p style="font-size:0.95rem;color:var(--text-muted);margin-bottom:2rem;">Fill out the form below and we'll get back to you within 24 hours. Or reach us directly via phone or WhatsApp.</p>
+
+          <form id="inquiry-form" style="display:flex;flex-direction:column;gap:1.25rem;">
+            <div>
+              <label for="name" class="form-label">Name <span style="color:var(--color-yellow);">*</span></label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your full name" required>
+            </div>
+            <div>
+              <label for="email" class="form-label">Email <span style="color:var(--color-yellow);">*</span></label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+            </div>
+            <div>
+              <label for="phone" class="form-label">Phone <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:0.75rem;opacity:0.6;">(Optional)</span></label>
+              <input type="tel" id="phone" name="phone" class="form-input" placeholder="+91 98765 43210">
+            </div>
+            <div>
+              <label for="message" class="form-label">Message <span style="color:var(--color-yellow);">*</span></label>
+              <textarea id="message" name="message" class="form-input" placeholder="Tell us about your travel plans — destinations, dates, group size, any special requirements..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="align-self:flex-start;margin-top:0.5rem;">
+              Send Inquiry <span style="margin-left:0.25rem;">→</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right: Contact Info -->
+        <div class="reveal-right">
+          <div style="background:var(--bg-beige);border-radius:16px;padding:2.5rem;margin-bottom:2rem;">
+            <h3 style="font-family:var(--font-heading);font-size:1.25rem;font-weight:700;color:var(--color-black);margin-bottom:1.5rem;">Contact Information</h3>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:1.25rem;">
+              <li style="display:flex;align-items:center;gap:0.75rem;">
+                <div style="width:44px;height:44px;border-radius:12px;background:var(--color-black);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <i data-lucide="phone" style="width:20px;height:20px;color:var(--color-yellow);"></i>
+                </div>
+                <div>
+                  <p style="font-weight:600;font-size:0.85rem;color:var(--color-black);">Phone</p>
+                  <a href="tel:+919876543210" style="font-size:0.95rem;color:var(--text-muted);">+91 98765 43210</a>
+                </div>
+              </li>
+              <li style="display:flex;align-items:center;gap:0.75rem;">
+                <div style="width:44px;height:44px;border-radius:12px;background:var(--color-black);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <i data-lucide="message-circle" style="width:20px;height:20px;color:var(--color-yellow);"></i>
+                </div>
+                <div>
+                  <p style="font-weight:600;font-size:0.85rem;color:var(--color-black);">WhatsApp</p>
+                  <a href="https://wa.me/919876543210" target="_blank" style="font-size:0.95rem;color:var(--text-muted);">Chat with us →</a>
+                </div>
+              </li>
+              <li style="display:flex;align-items:center;gap:0.75rem;">
+                <div style="width:44px;height:44px;border-radius:12px;background:var(--color-black);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <i data-lucide="mail" style="width:20px;height:20px;color:var(--color-yellow);"></i>
+                </div>
+                <div>
+                  <p style="font-weight:600;font-size:0.85rem;color:var(--color-black);">Email</p>
+                  <a href="mailto:info@sunvalleytransit.com" style="font-size:0.95rem;color:var(--text-muted);text-decoration:none;">info@sunvalleytransit.com</a>
+                </div>
+              </li>
+              <li style="display:flex;align-items:flex-start;gap:0.75rem;">
+                <div style="width:44px;height:44px;border-radius:12px;background:var(--color-black);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+                  <i data-lucide="map-pin" style="width:20px;height:20px;color:var(--color-yellow);"></i>
+                </div>
+                <div>
+                  <p style="font-weight:600;font-size:0.85rem;color:var(--color-black);">Address</p>
+                  <p style="font-size:0.95rem;color:var(--text-muted);">Ooty, Nilgiris District,<br>Tamil Nadu, India</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div style="background:var(--color-black);border-radius:16px;padding:2rem;text-align:center;">
+            <i data-lucide="clock" style="width:28px;height:28px;color:var(--color-yellow);margin-bottom:0.75rem;display:inline-block;"></i>
+            <h4 style="font-family:var(--font-heading);font-size:1.1rem;font-weight:800;color:var(--white);margin-bottom:0.5rem;">Operating Hours</h4>
+            <p style="color:rgba(240,236,228,0.7);font-size:0.9rem;line-height:1.6;">
+              Monday – Sunday<br>
+              <strong style="color:var(--bg-beige-dark);">7:00 AM – 9:00 PM</strong><br>
+              <span style="font-size:0.8rem;">Available 24/7 for airport pickups</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <style>@media(max-width:768px){div[style*="grid-template-columns:1.2fr 0.8fr"]{grid-template-columns:1fr!important}}</style>
+  </main>
+
+  <!-- FOOTER -->
+  <!-- ════════════════════════════════════════════════
+       PREMIUM FOOTER
+       ════════════════════════════════════════════════ -->
+  <footer class="premium-footer">
+    <div class="premium-footer-inner">
+      
+      <!-- Top Highlight Section -->
+      <div class="footer-highlight-section reveal">
+        <p class="footer-tagline">
+          Your trusted partner for seamless airport & railway shuttles, sightseeing, and customizable South India travel packages.
+        </p>
+        <div class="premium-social-row">
+          <a href="#" class="premium-social-btn" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+          </a>
+          <a href="https://wa.me/919876543210" class="premium-social-btn" aria-label="WhatsApp" target="_blank">
+            <i data-lucide="message-circle"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Grid -->
+      <div class="premium-footer-grid reveal">
+        
+        <!-- Column 1: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="premium-link-list">
+            <li><a href="index.html" class="premium-link">Home</a></li>
+            <li><a href="about.html" class="premium-link">About Us</a></li>
+            <li><a href="services.html" class="premium-link">Destinations & Services</a></li>
+            <li><a href="packages.html" class="premium-link">Travel Packages</a></li>
+            <li><a href="contact.html" class="premium-link">Contact / Inquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Popular Routes -->
+        <div class="footer-col">
+          <h4>Popular Routes</h4>
+          <ul class="premium-link-list">
+            <li><a href="services.html" class="premium-link">Ooty Airport Shuttle</a></li>
+            <li><a href="services.html" class="premium-link">Coimbatore Transfers</a></li>
+            <li><a href="services.html" class="premium-link">Nilgiri Sightseeing</a></li>
+            <li><a href="services.html" class="premium-link">Coonoor Tours</a></li>
+            <li><a href="packages.html" class="premium-link">Custom Travel Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="premium-contact-list">
+            <li class="premium-contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="mail"></i>
+              <a href="mailto:info@sunvalleytransit.com">info@sunvalleytransit.com</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Ooty, Nilgiris District,<br>Tamil Nadu, India</span>
+            </li>
+          </ul>
+          <p style="color:rgba(240,236,228,0.4);font-size:0.85rem;margin-top:1.5rem;font-style:italic;">Part of Sunvalley Living Concepts Pvt Ltd</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Bar -->
+      <div class="premium-bottom-bar">
+        <div>© 2026 Sunvalley Transit. All rights reserved.</div>
+        <div class="designed-with-care">
+          <span>Designed with care for the Nilgiris</span>
+          <i data-lucide="mountain" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script defer>document.addEventListener('DOMContentLoaded',()=>{if(typeof lucide!=='undefined')lucide.createIcons();});</script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

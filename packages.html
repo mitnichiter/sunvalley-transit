@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Packages — Sunvalley Transit</title>
+  <meta name="description" content="Explore curated travel packages for Ooty, Coonoor, Palakkad and South India. Weekend getaways, Jeep adventures, and custom itineraries by Sunvalley Transit.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav" class="nav-glass" style="position:fixed;width:100%;top:0;left:0;z-index:50;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;">
+    <a href="index.html" class="nav-logo" style="display:flex;align-items:center;"><img src="logo.png" alt="Sunvalley Transit" class="nav-logo-img"></a>
+    <div class="nav-links" style="display:none;" id="desktop-nav">
+      <div style="display:flex;gap:2rem;align-items:center;">
+        <a href="index.html" class="nav-link">Home</a><a href="about.html" class="nav-link">About</a><a href="services.html" class="nav-link">Destinations</a><a href="packages.html" class="nav-link">Packages</a><a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+    <a href="contact.html" class="btn-primary" id="nav-cta" style="display:none;">Book Now</a>
+    <button id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+  <style>@media(min-width:768px){#desktop-nav{display:flex!important}#nav-cta{display:inline-flex!important}#mobile-toggle{display:none!important}}</style>
+  <div id="mobile-menu">
+    <button id="mobile-close" aria-label="Close menu"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+    <a href="index.html" class="mobile-menu-link">Home</a><a href="about.html" class="mobile-menu-link">About</a><a href="services.html" class="mobile-menu-link">Destinations</a><a href="packages.html" class="mobile-menu-link">Packages</a><a href="contact.html" class="mobile-menu-link">Contact</a>
+    <a href="contact.html" class="btn-primary" style="margin-top:1rem;font-size:1rem;">Book Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1920&auto=format&fit=crop" alt="Mountain adventure" class="parallax-img">
+    <div class="hero-content">
+      <p class="overline" style="color:var(--color-yellow);margin-bottom:1rem;">Curated Journeys</p>
+      <h1 style="font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:700;">Travel Packages</h1>
+      <p style="margin-top:1rem;font-size:1.1rem;opacity:0.85;">Handcrafted itineraries for every kind of traveler</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- PACKAGES GRID -->
+    <section style="padding:6rem 1.5rem;">
+      <div style="max-width:1200px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+          <p class="overline" style="margin-bottom:0.75rem;">Choose Your Adventure</p>
+          <h2 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">Our Packages</h2>
+        </div>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:2rem;" class="stagger-children">
+
+          <!-- Package 1: Ooty Day Trip -->
+          <div class="package-grid-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=600&auto=format&fit=crop" alt="Ooty Day Trip" loading="lazy">
+
+            </div>
+            <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+
+              <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-black);margin-bottom:0.75rem;">Ooty Day Trip</h3>
+              <p style="font-size:0.9rem;line-height:1.6;color:var(--text-muted);margin-bottom:1rem;">Pickup from hotel/station, full-day Ooty sightseeing, and drop-off.</p>
+              <ul class="highlight-list" style="margin-bottom:1.5rem;">
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Botanical Garden</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Doddabetta Peak</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Ooty Lake & Rose Garden</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Tea Factory Visit</li>
+              </ul>
+              <div style="margin-top:auto;"><a href="contact.html" class="btn-dark" style="width:100%;justify-content:center;">Enquire Now →</a></div>
+            </div>
+          </div>
+
+          <!-- Package 2: Weekend Nilgiris -->
+          <div class="package-grid-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=600&auto=format&fit=crop" alt="Weekend Nilgiris" loading="lazy">
+
+            </div>
+            <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+
+              <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-black);margin-bottom:0.75rem;">Weekend Nilgiris</h3>
+              <p style="font-size:0.9rem;line-height:1.6;color:var(--text-muted);margin-bottom:1rem;">Ooty + Coonoor combo for the perfect weekend getaway.</p>
+              <ul class="highlight-list" style="margin-bottom:1.5rem;">
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Airport/Station Pickup & Drop</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Full Ooty Sightseeing</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Coonoor Half-Day Tour</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Nilgiri Mountain Railway</li>
+              </ul>
+              <div style="margin-top:auto;"><a href="contact.html" class="btn-dark" style="width:100%;justify-content:center;">Enquire Now →</a></div>
+            </div>
+          </div>
+
+          <!-- Package 3: Nilgiris Explorer -->
+          <div class="package-grid-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?q=80&w=600&auto=format&fit=crop" alt="Nilgiris Explorer" loading="lazy">
+
+            </div>
+            <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+
+              <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-black);margin-bottom:0.75rem;">Nilgiris Explorer</h3>
+              <p style="font-size:0.9rem;line-height:1.6;color:var(--text-muted);margin-bottom:1rem;">Complete Nilgiris experience — every major sight and hidden gem.</p>
+              <ul class="highlight-list" style="margin-bottom:1.5rem;">
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Complete Ooty Tour</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Full Coonoor Exploration</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Tea Estate Visits</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Hidden Waterfall Trek</li>
+              </ul>
+              <div style="margin-top:auto;"><a href="contact.html" class="btn-dark" style="width:100%;justify-content:center;">Enquire Now →</a></div>
+            </div>
+          </div>
+
+          <!-- Package 4: South India Circuit -->
+          <div class="package-grid-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=600&auto=format&fit=crop" alt="South India Circuit" loading="lazy">
+
+            </div>
+            <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+
+              <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-black);margin-bottom:0.75rem;">South India Circuit</h3>
+              <p style="font-size:0.9rem;line-height:1.6;color:var(--text-muted);margin-bottom:1rem;">Bangalore → Coimbatore → Palakkad → Ooty → Coonoor.</p>
+              <ul class="highlight-list" style="margin-bottom:1.5rem;">
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Multi-City Coverage</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Coimbatore Temple Stops</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Palakkad Fort & Dam</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Full Nilgiris Sightseeing</li>
+              </ul>
+              <div style="margin-top:auto;"><a href="contact.html" class="btn-dark" style="width:100%;justify-content:center;">Enquire Now →</a></div>
+            </div>
+          </div>
+
+          <!-- Package 5: Jeep Adventure -->
+          <div class="package-grid-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=600&auto=format&fit=crop" alt="Jeep Adventure" loading="lazy">
+
+            </div>
+            <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+
+              <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-black);margin-bottom:0.75rem;">Jeep Adventure</h3>
+              <p style="font-size:0.9rem;line-height:1.6;color:var(--text-muted);margin-bottom:1rem;">Off-road Nilgiris exploration — hidden gems only locals know.</p>
+              <ul class="highlight-list" style="margin-bottom:1.5rem;">
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Rugged Jeep Vehicle</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Expert Local Driver-Guide</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Off-Beat Mountain Trails</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Secret Viewpoints & Spots</li>
+              </ul>
+              <div style="margin-top:auto;"><a href="contact.html" class="btn-dark" style="width:100%;justify-content:center;">Enquire Now →</a></div>
+            </div>
+          </div>
+
+          <!-- Package 6: Palakkad Heritage -->
+          <div class="package-grid-card">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?q=80&w=600&auto=format&fit=crop" alt="Palakkad Heritage" loading="lazy">
+
+            </div>
+            <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+
+              <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-black);margin-bottom:0.75rem;">Palakkad Heritage Tour</h3>
+              <p style="font-size:0.9rem;line-height:1.6;color:var(--text-muted);margin-bottom:1rem;">Ancient forts, Silent Valley, and authentic Kerala culture.</p>
+              <ul class="highlight-list" style="margin-bottom:1.5rem;">
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Palakkad Fort</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Silent Valley National Park</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Malampuzha Dam & Garden</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Kerala Cuisine Experiences</li>
+              </ul>
+              <div style="margin-top:auto;"><a href="contact.html" class="btn-dark" style="width:100%;justify-content:center;">Enquire Now →</a></div>
+            </div>
+          </div>
+
+          <!-- Package 7: Custom -->
+          <div class="package-grid-card" style="border:2px dashed var(--color-yellow);background:var(--bg-beige);">
+            <div class="card-image" style="background:linear-gradient(135deg,var(--color-black),var(--color-dark-grey));display:flex;align-items:center;justify-content:center;">
+              <div style="text-align:center;color:white;padding:2rem;">
+                <i data-lucide="compass" style="width:56px;height:56px;margin:0 auto 1rem;display:block;color:var(--color-yellow);"></i>
+                <p style="font-family:var(--font-heading);font-size:1.5rem;font-weight:800;">Build Your Own</p>
+              </div>
+            </div>
+            <div style="padding:1.5rem;flex:1;display:flex;flex-direction:column;">
+
+              <h3 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--color-black);margin-bottom:0.75rem;">Custom Package</h3>
+              <p style="font-size:0.9rem;line-height:1.6;color:var(--text-muted);margin-bottom:1rem;">Tell us your dream trip! We'll build a fully customized itinerary tailored to your schedule, interests, and comfort level.</p>
+              <ul class="highlight-list" style="margin-bottom:1.5rem;">
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Choose Your Destinations</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Pick Your Vehicle</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Set Your Duration</li>
+                <li><i data-lucide="check" style="width:16px;height:16px;"></i> Add Accommodation</li>
+              </ul>
+              <div style="margin-top:auto;"><a href="contact.html" class="btn-primary" style="width:100%;justify-content:center;">Get a Custom Quote →</a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INCLUDED -->
+    <section style="padding:4rem 1.5rem 6rem;background:var(--bg-beige);">
+      <div style="max-width:1000px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:3rem;" class="reveal">
+          <p class="overline" style="margin-bottom:0.75rem;">All Packages Include</p>
+          <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,2.5rem);">What's Included</h2>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:3rem;" class="stagger-children">
+          <div class="amenity-item">
+            <div class="amenity-icon"><i data-lucide="car" style="width:24px;height:24px;"></i></div>
+            <span>Vehicle</span>
+          </div>
+          <div class="amenity-item">
+            <div class="amenity-icon"><i data-lucide="user" style="width:24px;height:24px;"></i></div>
+            <span>Driver</span>
+          </div>
+          <div class="amenity-item">
+            <div class="amenity-icon"><i data-lucide="fuel" style="width:24px;height:24px;"></i></div>
+            <span>Fuel</span>
+          </div>
+          <div class="amenity-item">
+            <div class="amenity-icon"><i data-lucide="parking-meter" style="width:24px;height:24px;"></i></div>
+            <span>Parking</span>
+          </div>
+          <div class="amenity-item">
+            <div class="amenity-icon"><i data-lucide="milestone" style="width:24px;height:24px;"></i></div>
+            <span>Tolls</span>
+          </div>
+        </div>
+        <p style="text-align:center;margin-top:2rem;font-size:0.9rem;color:var(--text-muted);font-style:italic;" class="reveal">Accommodation & meals can be arranged through our parent company, Sunvalley Living Concepts Pvt Ltd.</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner-wrapper">
+      <div class="cta-banner" style="padding:5rem 1.5rem;">
+        <div style="max-width:700px;margin:0 auto;text-align:center;position:relative;z-index:1;" class="reveal">
+          <h2 style="font-family:var(--font-heading);color:white;font-size:clamp(2rem,5vw,3rem);font-weight:700;margin-bottom:1rem;">Can't Find the Right Package?</h2>
+          <p style="color:rgba(240,236,228,0.8);font-size:1.05rem;margin-bottom:2rem;">We specialize in creating custom itineraries. Tell us your dream trip and we'll make it happen.</p>
+          <div style="display:flex;flex-direction:column;align-items:center;gap:1.5rem;margin-top:3rem;">
+            <div class="overline-cta">Tailored Travel</div>
+            <a href="contact.html" class="btn-primary">Get a Custom Quote <span style="margin-left:0.25rem;">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <!-- ════════════════════════════════════════════════
+       PREMIUM FOOTER
+       ════════════════════════════════════════════════ -->
+  <footer class="premium-footer">
+    <div class="premium-footer-inner">
+      
+      <!-- Top Highlight Section -->
+      <div class="footer-highlight-section reveal">
+        <p class="footer-tagline">
+          Your trusted partner for seamless airport & railway shuttles, sightseeing, and customizable South India travel packages.
+        </p>
+        <div class="premium-social-row">
+          <a href="#" class="premium-social-btn" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+          </a>
+          <a href="https://wa.me/919876543210" class="premium-social-btn" aria-label="WhatsApp" target="_blank">
+            <i data-lucide="message-circle"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Grid -->
+      <div class="premium-footer-grid reveal">
+        
+        <!-- Column 1: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="premium-link-list">
+            <li><a href="index.html" class="premium-link">Home</a></li>
+            <li><a href="about.html" class="premium-link">About Us</a></li>
+            <li><a href="services.html" class="premium-link">Destinations & Services</a></li>
+            <li><a href="packages.html" class="premium-link">Travel Packages</a></li>
+            <li><a href="contact.html" class="premium-link">Contact / Inquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Popular Routes -->
+        <div class="footer-col">
+          <h4>Popular Routes</h4>
+          <ul class="premium-link-list">
+            <li><a href="services.html" class="premium-link">Ooty Airport Shuttle</a></li>
+            <li><a href="services.html" class="premium-link">Coimbatore Transfers</a></li>
+            <li><a href="services.html" class="premium-link">Nilgiri Sightseeing</a></li>
+            <li><a href="services.html" class="premium-link">Coonoor Tours</a></li>
+            <li><a href="packages.html" class="premium-link">Custom Travel Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="premium-contact-list">
+            <li class="premium-contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="mail"></i>
+              <a href="mailto:info@sunvalleytransit.com">info@sunvalleytransit.com</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Ooty, Nilgiris District,<br>Tamil Nadu, India</span>
+            </li>
+          </ul>
+          <p style="color:rgba(240,236,228,0.4);font-size:0.85rem;margin-top:1.5rem;font-style:italic;">Part of Sunvalley Living Concepts Pvt Ltd</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Bar -->
+      <div class="premium-bottom-bar">
+        <div>© 2026 Sunvalley Transit. All rights reserved.</div>
+        <div class="designed-with-care">
+          <span>Designed with care for the Nilgiris</span>
+          <i data-lucide="mountain" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script defer>document.addEventListener('DOMContentLoaded',()=>{if(typeof lucide!=='undefined')lucide.createIcons();});</script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

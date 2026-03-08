@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — Sunvalley Transit</title>
+  <meta name="description" content="Learn about Sunvalley Transit and Sunvalley Living Concepts Pvt Ltd — your trusted partner for travel and stays in the Nilgiris and South India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <!-- NAV (same as index) -->
+  <nav id="main-nav" class="nav-glass" style="position:fixed;width:100%;top:0;left:0;z-index:50;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center;">
+    <a href="index.html" class="nav-logo" style="display:flex;align-items:center;"><img src="logo.png" alt="Sunvalley Transit" class="nav-logo-img"></a>
+    <div class="nav-links" style="display:none;" id="desktop-nav">
+      <div style="display:flex;gap:2rem;align-items:center;">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Destinations</a>
+        <a href="packages.html" class="nav-link">Packages</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+    </div>
+    <a href="contact.html" class="btn-primary" id="nav-cta" style="display:none;">Book Now</a>
+    <button id="mobile-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </nav>
+  <style>@media(min-width:768px){#desktop-nav{display:flex!important}#nav-cta{display:inline-flex!important}#mobile-toggle{display:none!important}}</style>
+  <div id="mobile-menu">
+    <button id="mobile-close" aria-label="Close menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html" class="mobile-menu-link">Home</a>
+    <a href="about.html" class="mobile-menu-link">About</a>
+    <a href="services.html" class="mobile-menu-link">Destinations</a>
+    <a href="packages.html" class="mobile-menu-link">Packages</a>
+    <a href="contact.html" class="mobile-menu-link">Contact</a>
+    <a href="contact.html" class="btn-primary" style="margin-top:1rem;font-size:1rem;">Book Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <img src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?q=80&w=1920&auto=format&fit=crop" alt="Nilgiris mountain landscape" class="parallax-img">
+    <div class="hero-content" style="position:relative;z-index:2;text-align:center;color:white;">
+      <p class="overline" style="color:var(--color-yellow);margin-bottom:1rem;">Who We Are</p>
+      <h1 style="font-family:var(--font-heading);font-size:clamp(2.5rem,6vw,5rem);font-weight:700;">Our Story</h1>
+      <p style="margin-top:1rem;font-size:1.1rem;opacity:0.85;">Sunvalley Living Concepts Pvt Ltd</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- COMPANY STORY -->
+    <section class="our-story-section" style="padding:6rem 1.5rem;">
+      <div class="our-story-grid" style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+        <div class="reveal-left our-story-text">
+          <p class="overline" style="margin-bottom:0.75rem;">Our Journey</p>
+          <h2 class="section-title" style="font-size:clamp(1.75rem,4vw,3rem);margin-bottom:1.5rem;">A Legacy of Comfort & Adventure</h2>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem;">Welcome to Sunvalley Transit – Your Gateway to the Nilgiris and South India. As part of <strong>Sunvalley Living Concepts Pvt Ltd</strong>, which provides the best stays for guests, we ensure your entire experience—stay and travel—is convenient, comfortable, and cozy.</p>
+          <p style="font-size:1.05rem;line-height:1.8;color:var(--text-muted);margin-bottom:1.5rem;">We offer seamless airport and railway shuttles, Ooty and Coonoor sightseeing, and fully customizable packages tailored to your needs and comfort. We also operate in Palakkad, providing the best service to famous tourist spots.</p>
+          <div style="border-left:3px solid var(--color-yellow);padding-left:1.5rem;margin:2rem 0;">
+            <p style="font-family:var(--font-heading);font-size:1.2rem;font-style:italic;line-height:1.6;color:var(--color-black);">"We ensure your entire experience—stay and travel—is convenient, comfortable, and cozy."</p>
+          </div>
+        </div>
+        <style>
+          .our-story-images {
+            display: grid;
+            gap: 1rem;
+          }
+          .our-story-images .image-col {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+          }
+          .our-story-images img {
+            border-radius: 12px;
+            width: 100%;
+            object-fit: cover;
+          }
+          
+          /* Specific Staggering Heights */
+          .our-story-images .image-col:nth-child(1) img:nth-child(1) { height: 280px; }
+          .our-story-images .image-col:nth-child(1) img:nth-child(2) { height: 200px; }
+          .our-story-images .image-col:nth-child(2) img:nth-child(1) { height: 200px; }
+          .our-story-images .image-col:nth-child(2) img:nth-child(2) { height: 280px; }
+
+          @media (min-width: 769px) {
+            .our-story-images { grid-template-columns: 1fr 1fr; }
+            /* Masonry step effect applied only on desktop */
+            .our-story-images .image-col:nth-child(2) { padding-top: 2rem; }
+          }
+          @media (max-width: 768px) {
+            .our-story-images { grid-template-columns: 1fr !important; }
+            div[style*="grid-template-columns:1fr 1fr;gap:4rem"] { grid-template-columns: 1fr !important; }
+          }
+        </style>
+
+        <div class="reveal-right our-story-images">
+          <div class="image-col">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=500&auto=format&fit=crop" alt="Ooty tea plantations" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=500&auto=format&fit=crop" alt="Mountain road" loading="lazy">
+          </div>
+          <div class="image-col">
+            <img src="https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?q=80&w=500&auto=format&fit=crop" alt="Coonoor hills" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=500&auto=format&fit=crop" alt="Jeep adventure" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR VALUES -->
+    <section style="padding:6rem 1.5rem;background:var(--bg-beige);">
+      <div style="max-width:1200px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:3rem;" class="reveal">
+          <p class="overline" style="margin-bottom:0.75rem;">Our Values</p>
+          <h2 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">What Drives Us</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;" class="stagger-children">
+          <div class="feature-card">
+            <div class="icon-wrap"><i data-lucide="heart" style="width:28px;height:28px;"></i></div>
+            <h3>Comfort</h3>
+            <p>Every vehicle maintained to the highest standards. From sedans to SUVs to rugged Jeeps — travel in comfort tailored to your journey.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrap"><i data-lucide="shield-check" style="width:28px;height:28px;"></i></div>
+            <h3>Safety</h3>
+            <p>Experienced, friendly drivers who prioritize your well-being. Top-notch safety standards and well-maintained vehicles on every trip.</p>
+          </div>
+          <div class="feature-card">
+            <div class="icon-wrap"><i data-lucide="compass" style="width:28px;height:28px;"></i></div>
+            <h3>Authenticity</h3>
+            <p>Local expertise to show you the real Nilgiris. Hidden gems, off-beat trails, and cultural spots that only seasoned locals know about.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR FLEET -->
+    <section style="padding:6rem 1.5rem;">
+      <div style="max-width:1200px;margin:0 auto;">
+        <div style="text-align:center;margin-bottom:3rem;" class="reveal">
+          <p class="overline" style="margin-bottom:0.75rem;">Our Fleet</p>
+          <h2 class="section-title" style="font-size:clamp(2rem,5vw,3rem);">Vehicles for Every Journey</h2>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem;" class="stagger-children">
+          <div style="position:relative;border-radius:16px;overflow:hidden;height:300px;">
+            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?q=80&w=500&auto=format&fit=crop" alt="Sedan car" style="width:100%;height:100%;object-fit:cover;">
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(to top,rgba(17,17,17,0.9),transparent);color:white;">
+              <h3 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;">Sedans</h3>
+              <p style="font-size:0.85rem;opacity:0.8;">Comfortable city transfers & airport shuttles</p>
+            </div>
+          </div>
+          <div style="position:relative;border-radius:16px;overflow:hidden;height:300px;">
+            <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=500&auto=format&fit=crop" alt="SUV vehicle" style="width:100%;height:100%;object-fit:cover;">
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(to top,rgba(17,17,17,0.9),transparent);color:white;">
+              <h3 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;">SUVs</h3>
+              <p style="font-size:0.85rem;opacity:0.8;">Family sightseeing & multi-city tours</p>
+            </div>
+          </div>
+          <div style="position:relative;border-radius:16px;overflow:hidden;height:300px;">
+            <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=500&auto=format&fit=crop" alt="Jeep for off-road" style="width:100%;height:100%;object-fit:cover;">
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(to top,rgba(17,17,17,0.9),transparent);color:white;">
+              <h3 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;">Rugged Jeeps</h3>
+              <p style="font-size:0.85rem;opacity:0.8;">Off-road mountain adventures & hidden gems</p>
+            </div>
+          </div>
+          <div style="position:relative;border-radius:16px;overflow:hidden;height:300px;">
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?q=80&w=500&auto=format&fit=crop" alt="Tempo Traveller" style="width:100%;height:100%;object-fit:cover;">
+            <div style="position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(to top,rgba(17,17,17,0.9),transparent);color:white;">
+              <h3 style="font-family:var(--font-heading);font-size:1.2rem;font-weight:700;">Tempo Travellers</h3>
+              <p style="font-size:0.85rem;opacity:0.8;">Group tours & large family trips</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════ -->
+  <section class="cta-banner-wrapper">
+    <div class="cta-banner" style="padding:6rem 1.5rem;">
+      <div style="max-width:800px;margin:0 auto;text-align:center;position:relative;z-index:1;">
+        <div class="reveal">
+          <h2 style="font-family:var(--font-heading);color:var(--white);font-size:clamp(2rem,5vw,3.5rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem;">Ready to Begin Your<br>Nilgiris Adventure?</h2>
+          <p style="color:rgba(240,236,228,0.8);font-size:1.1rem;line-height:1.7;margin-bottom:2.5rem;">Let us plan your perfect escape through the hills. Whether it's a quick weekend getaway or a grand South India circuit — we'll make it unforgettable.</p>
+          <div style="display:flex;gap:1.5rem;justify-content:center;align-items:center;flex-wrap:wrap;margin-top:2.5rem;">
+            <a href="contact.html" class="btn-primary">Get a Quote <span style="margin-left:0.25rem;">→</span></a>
+            <a href="tel:+919876543210" class="btn-secondary" style="display:inline-flex;align-items:center;gap:0.5rem;">
+              <i data-lucide="phone" style="width:18px;height:18px;"></i> Call Us Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════ -->
+  <footer class="premium-footer">
+    <div class="premium-footer-inner">
+      
+      <!-- Top Highlight Section -->
+      <div class="footer-highlight-section reveal">
+        <p class="footer-tagline">
+          Your trusted partner for seamless airport & railway shuttles, sightseeing, and customizable South India travel packages.
+        </p>
+        <div class="premium-social-row">
+          <a href="#" class="premium-social-btn" aria-label="Instagram">
+            <i data-lucide="instagram"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="Facebook">
+            <i data-lucide="facebook"></i>
+          </a>
+          <a href="#" class="premium-social-btn" aria-label="YouTube">
+            <i data-lucide="youtube"></i>
+          </a>
+          <a href="https://wa.me/919876543210" class="premium-social-btn" aria-label="WhatsApp" target="_blank">
+            <i data-lucide="message-circle"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Footer Grid -->
+      <div class="premium-footer-grid reveal">
+        
+        <!-- Column 1: Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="premium-link-list">
+            <li><a href="index.html" class="premium-link">Home</a></li>
+            <li><a href="about.html" class="premium-link">About Us</a></li>
+            <li><a href="services.html" class="premium-link">Destinations & Services</a></li>
+            <li><a href="packages.html" class="premium-link">Travel Packages</a></li>
+            <li><a href="contact.html" class="premium-link">Contact / Inquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2: Popular Routes -->
+        <div class="footer-col">
+          <h4>Popular Routes</h4>
+          <ul class="premium-link-list">
+            <li><a href="services.html" class="premium-link">Ooty Airport Shuttle</a></li>
+            <li><a href="services.html" class="premium-link">Coimbatore Transfers</a></li>
+            <li><a href="services.html" class="premium-link">Nilgiri Sightseeing</a></li>
+            <li><a href="services.html" class="premium-link">Coonoor Tours</a></li>
+            <li><a href="packages.html" class="premium-link">Custom Travel Packages</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <ul class="premium-contact-list">
+            <li class="premium-contact-item">
+              <i data-lucide="phone"></i>
+              <a href="tel:+919876543210">+91 98765 43210</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="mail"></i>
+              <a href="mailto:info@sunvalleytransit.com">info@sunvalleytransit.com</a>
+            </li>
+            <li class="premium-contact-item">
+              <i data-lucide="map-pin"></i>
+              <span>Ooty, Nilgiris District,<br>Tamil Nadu, India</span>
+            </li>
+          </ul>
+          <p style="color:rgba(240,236,228,0.4);font-size:0.85rem;margin-top:1.5rem;font-style:italic;">Part of Sunvalley Living Concepts Pvt Ltd</p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Legal Bar -->
+      <div class="premium-bottom-bar">
+        <div>© 2026 Sunvalley Transit. All rights reserved.</div>
+        <div class="designed-with-care">
+          <span>Designed with care for the Nilgiris</span>
+          <i data-lucide="mountain" style="width:14px;height:14px;"></i>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script defer>document.addEventListener('DOMContentLoaded',()=>{if(typeof lucide!=='undefined')lucide.createIcons();});</script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
