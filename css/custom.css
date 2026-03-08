@@ -228,7 +228,7 @@ a {
 }
 
 .nav-glass {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background: transparent;
   transition: all 0.5s var(--ease-smooth);
   border-bottom: 1px solid transparent;
 }
