@@ -2120,3 +2120,23 @@ textarea.form-input {
     justify-content: center;
   }
 }
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE GRIDS FOR NEW CONTENT
+   ═══════════════════════════════════════════════════ */
+.grid-responsive-base {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-cols-auto-280 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.grid-cols-auto-320 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); }
+.grid-cols-auto-500 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr)); }
+
+@media (max-width: 768px) {
+  .grid-responsive-base {
+    gap: 1.25rem;
+  }
+  .package-grid-card {
+    padding: 1.5rem !important; /* Override inline styles robustly */
+  }
+}
